@@ -1,0 +1,21 @@
+CREATE TABLE inventory_list (id INTEGER PRIMARY KEY, item TEXT, price INTEGER, quantity_sold INTEGER);
+INSERT INTO inventory_list VALUES (1, "cauldron", 18, 25),
+(2, "Quills", 15, 10),
+(3, "Brooms", 100, 5),
+(4, "Owls", 300, 8),
+(5, "Spell Books", 50, 100),
+(6, "Wands", 150, 50),
+(7, "Frogs", 10, 4),
+(8, "Pumpkin Pastels", 3, 100),
+(9, "Robes", 200, 67),
+(10, "Trunk", 400, 83),
+(11, "Parchment", 10, 22),
+(12, "Wizard Hat", 20, 10),
+(13, "Ink", 30, 94),
+(14, "Magical Text Book", 80, 39),
+(15, "Golden Snitch", 67, 12);
+
+SELECT * FROM inventory_list WHERE price ORDER BY price;
+SELECT * FROM inventory_list WHERE quantity_sold ORDER BY quantity_sold;
+
+
